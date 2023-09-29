@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  #start{
+    font-size: 15px;
+    padding: 5px 10px;
+    background: #e50e5cbd;
+    border: navajowhite;
+    border-radius: 5px;
+    color: white;
+  }
+  .box{
+    width: 40px;
+    height: 40px;
+    max-width: 50px;
+    max-height: 50px;
+    border: none;
+    background: #c5166ddb;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 5px;
+    display: inline-block;
+  }
+  .spacing{
+    line-height: 2.5;
+    background: repeating-linear-gradient(131deg, #0000001a, #00000047 100px);
+    
+    min-height: 300px;
+  }
+  .clr{
+    font-size: 18px;
+    color: rgb(26, 107, 49);
+  }
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+</style>
+<body>
+    
+   
+<!-- 
+    <div class="container">
+
+       <div class="row justify-content-center align-items-center">
+        <div class="num col-4 d-flex">
+            <div id="num-1">1</div>
+            <div id="num-2">+</div>
+            <div id="num-3">2</div>
+            <div id="num-4">=</div>
+            <div id="num-5">3</div>
+           </div>
+    
+          <div class="output col-4">
+            <div class="card-1 p-2  text-dark">1</div>
+            <div class="card-2 p-2  text-dark">2</div>
+            <div class="card-3 p-2  text-dark">3</div>
+            <div class="card-4 p-2  text-dark">4</div>
+          </div>
+
+       </div>
+
+         <button id="start-btn">Start</button>       
+    </div> -->
+
+<div class="container main">
+ <div class="col-md-4 px-4 py-2 spacing text-center border-0 border-radius-5">
+  <!-- <div id="highScore">0</div> -->
+  <div id="currentScore" class="clr"></div>
+ <button onclick="startGame()" id="start" class="clr">Start Game</button>
+
+ <div id="timeDisplay" hidden> </div>
+
+<div id="hidden">
+
+<div id="operation" class="big clr"></div>
+<div id="spr">
+  <button id="btn1" onclick="checkAnswer(1)" class="box">0</button>
+<button id="btn2" onclick="checkAnswer(2)"  class="box">0</button><br>
+<button id="btn3" onclick="checkAnswer(3)"  class="box">0</button>
+<button id="btn4" onclick="checkAnswer(4)"  class="box">0</button>
+
+
+</div>
+
+</div>
+ </div>
+
+</div>
+
+
+
+
+
+
+
+
+    <script src="card.js"></script>
+</body>
+</html>
